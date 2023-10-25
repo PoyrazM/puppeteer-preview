@@ -69,5 +69,5 @@ const selectOS = async (page, operatingSystem) => {
 	const elementId = osToElementId[operatingSystem]
 
 	if (elementId) await page.click(elementId)
-	else console.log('Unsupperted operating system selected !')
+	else console.log('Unsupported operating system selected !')
 }

@@ -1,0 +1,25 @@
+{
+  "name": "puppeteer-preview",
+  "version": "1.0.0",
+  "description": "Automated software testing with Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha --timeout=30000 ./tests",
+    "test:device":  "./node_modules/mocha/bin/_mocha --timeout=30000 ./tests/device.test.js",
+    "test:e2e": "./node_modules/mocha/bin/_mocha --timeout=30000 ./tests/e2e-tests/*.test.js"
+  },
+  "keywords": [
+    "Puppeteer",
+    "Mocha",
+    "Chai",
+    "Automation"
+  ],
+  "author": "PoyrazM",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "prettier": "^3.0.3",
+    "puppeteer": "^21.4.0"
+  }
+}
